@@ -22,6 +22,7 @@ jobs:
     - name: Build with Gradle
       uses: gradle/actions/setup-gradle@v3
       with:
+        gradle-version: wrapper
         arguments: assembleDebug
 
     - name: Upload APK
