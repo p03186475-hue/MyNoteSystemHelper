@@ -23,7 +23,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       with:
         gradle-version: '8.5'
-        arguments: assembleDebug
+        arguments: :app:assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
